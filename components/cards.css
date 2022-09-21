@@ -1,3 +1,8 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .card {
   width: 275px;
   text-align: center;
@@ -21,16 +26,21 @@
 
 .card-bottom-content {
   text-align: left;
+  display: flex;
+  margin-left: 5px;
+  align-items: center;
+  padding-bottom: 10px;
+  gap: 10px;
 }
 
 .card .save-button {
-  background-color: cyan;
-  color: aliceblue;
+  background-color: beige;
+  color: rgb(181, 181, 181);
   padding: 5px 15px;
   border-radius: 8px;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 15px;
   display: none;
 }
 
@@ -39,10 +49,24 @@
 }
 
 .card-top-content:hover .save-button {
-  background-color: red;
   display: block;
 }
 
 .save-button:hover {
   color: #000;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-bottom-content .profile-link {
+  color: blue;
+}
+
+.card-bottom-content .profile-link:hover {
+  color: hsl(209, 100%, 50%);
 }
