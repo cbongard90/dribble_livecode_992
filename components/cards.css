@@ -1,0 +1,48 @@
+.card {
+  width: 275px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  padding-top: 10px;
+}
+
+.card-top-content .list-inline {
+  color: rgb(189, 189, 189);
+  text-align: right;
+  margin-right: 10px;
+}
+
+.card-bottom-content {
+  text-align: left;
+}
+
+.card .save-button {
+  background-color: cyan;
+  color: aliceblue;
+  padding: 5px 15px;
+  border-radius: 8px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
+}
+
+.card-top-content {
+  position: relative;
+}
+
+.card-top-content:hover .save-button {
+  background-color: red;
+  display: block;
+}
+
+.save-button:hover {
+  color: #000;
+}

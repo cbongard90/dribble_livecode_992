@@ -7,20 +7,30 @@
   <title>Dribble Livecode</title>
   <!-- Fontawesome Stylesheet -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>
-    Dribble Livecode
-  </h1>
+  <div class="container">
+    <h1>
+      Dribble Livecode
+    </h1>
 
-  <!-- Card -->
-  <img src="https://source.unsplash.com/random" alt="" width="200px">
-  <ul>
-    <li><i class="fa-solid fa-eye"></i> 99</li>
-    <li><i class="fa-solid fa-comment"></i> 25</li>
-    <li><i class="fa-solid fa-heart"></i> 60</li>
-  </ul>
-  <img src="https://kitt.lewagon.com/placeholder/users/random" alt="avatar" width="50">
-  <a href="#">Username</a>
+    <!-- Card -->
+    <div class="card">
+      <div class="card-top-content">
+        <img src="https://source.unsplash.com/random" alt="Product" class="card-image">
+        <ul class="list-inline">
+          <li><i class="fa-solid fa-eye"></i> 99</li>
+          <li><i class="fa-solid fa-comment"></i> 25</li>
+          <li><i class="fa-solid fa-heart"></i> 60</li>
+        </ul>
+        <a href="#" class="save-button">Save</a>
+      </div>
+      <div class="card-bottom-content">
+        <img src="https://kitt.lewagon.com/placeholder/users/random" alt="avatar" width="50" class="avatar img-circle">
+        <a href="#">Username</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
